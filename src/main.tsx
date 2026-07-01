@@ -1,0 +1,23 @@
+import {StrictMode} from 'react';
+import {createRoot} from 'react-dom/client';
+import App from './App.tsx';
+import './index.css';
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);
+
+// Register the Service Worker for Progressive Web App (PWA) capabilities
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => {
+        console.log('PWA ServiceWorker registered successfully with scope: ', registration.scope);
+      })
+      .catch((error) => {
+        console.error('PWA ServiceWorker registration failed: ', error);
+      });
+  });
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="#0f172a"/>
+  
+  <!-- Outer Glow effect -->
+  <circle cx="256" cy="256" r="160" fill="url(#orangeGlow)" opacity="0.15"/>
+  
+  <!-- Graduated Ring -->
+  <circle cx="256" cy="256" r="140" stroke="url(#orangeGradient)" stroke-width="6" fill="none" opacity="0.3"/>
+  
+  <!-- Cloud Icon centered -->
+  <path d="M150 290 a55 55 0 0 1 55 -55 a65 65 0 0 1 125 -15 a55 55 0 0 1 55 55 a35 35 0 0 1 -10 68 l-215 0 a35 35 0 0 1 -10 -53 z" fill="url(#orangeGradient)"/>
+
+  <!-- Glowing inner nodes -->
+  <circle cx="240" cy="270" r="10" fill="#ffffff" opacity="0.9"/>
+  <circle cx="290" cy="300" r="8" fill="#fb923c"/>
+  <circle cx="190" cy="310" r="7" fill="#f97316"/>
+  <line x1="240" y1="270" x2="290" y2="300" stroke="#ffffff" stroke-width="3" opacity="0.6"/>
+  <line x1="240" y1="270" x2="190" y2="310" stroke="#ffffff" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="orangeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+</svg>
