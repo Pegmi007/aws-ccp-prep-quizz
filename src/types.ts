@@ -6,7 +6,7 @@ export interface Question {
     text: string;
   }[];
   correctAnswer: string[];
-  rubric: 'Concepts Cloud' | 'Sécurité et Conformité' | 'Technologie et Services' | 'Facturation et Tarification';
+  rubric: string;
   explanation?: string;
 }
 
